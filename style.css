@@ -5,7 +5,7 @@ http://sixrevisions.com/css/ghost-buttons/
 */
 
 html {
-  background-image: url("img/background2.jpg");
+  background-image: url("/img/singapore.jpg");
   background-size: cover;
   height: 100%;
 }
@@ -90,8 +90,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 5em;
-  margin-top: 4em;
-  margin-bottom: 2em;
+  margin-top: 0.7em;
 }
 
 .main_body:nth-child(2) {
@@ -99,7 +98,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 5em;
   font-weight: bold;
   color: #fff;
   margin-bottom: 0;
