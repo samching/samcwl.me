@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Samching's Webpage</title>
-</head>
+  <head>
+    <title>CS52 Website</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<body>
-My Webpage
-</body>
+  <body>
+    <div class= "content">
+      <nav>
+        <a id="logo" href="https://samcwl.me"/>Sam</a>
+
+        <ul class="navbar_links">
+          <li><a class= "navbar_link" href = "/about">About</a></li>
+          <li><a id="sign-in" href = "#">Sign In</a></li>
+        </ul>
+      </nav>
+
+      <div class = "main_body">
+        <h1>Samuel Ching</h1>
+        <p id="tagline">CS and Math@Dartmouth</p>
+
+        <form action="/submitted.html" id= "submit">
+          <input id="email_box" type="email" value="Email Address" />
+          <button id="submit_button" type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+
+
+    <footer>
+
+      <div class="contact_information">
+        <ul class="contact_links">
+          <li><a href = "#" id="contact">Contact</a></li>
+          <li><a href ="#" id="facebook_logo"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href = "#" id="twitter_logo"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </body>
 
 </html>

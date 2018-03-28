@@ -1,0 +1,272 @@
+/* Inspiration for CSS Links
+www.slack.com
+http://cs52.me/assignments/lab/landing-page/
+http://sixrevisions.com/css/ghost-buttons/
+
+Background image taken from https://www.pexels.com/photo/stars-sky-night-galaxy-14676/
+*/
+
+html {
+  background-image: url("/img/background2.png");
+  background-size: cover;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 75px;
+  padding: 8px;
+  margin: 10px;
+}
+
+.navbar_links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar_link {
+  width: 75px;
+  padding: 8px;
+  margin: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
+}
+
+.navbar_link:hover {
+  color: #fff;
+  border-bottom:1px solid;
+}
+
+#sign-in {
+  width: 75px;
+  padding: 8px;
+  margin-right: 20px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+#sign-in:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+            color 0.3s ease-in;
+}
+
+#logo {
+  width: 30px;
+  margin: 10px;
+  padding-left: -5px;
+  padding-right: -5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+#logo:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+            color 0.3s ease-in;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.main_body:nth-child(2) {
+  color: #fff;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#tagline {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#submit {
+  display: flex;
+  justify-content: space-around;
+}
+
+#email_box {
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1em;
+  padding: 1em 1em;
+  color: #80828a;
+  box-shadow: inset 0em 0em 0.1em 0em rgba(0,0,0,0.7);
+}
+
+#submit_button {
+  color: #fff;
+  background-color: #42C299;
+  font-size: 1em;
+  border: none;
+  padding: 1em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 0.2em;
+  margin-left: 0.8em;
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+#submit_button:hover {
+  background-color: rgba(66,194,153, 0.4);
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+footer {
+  width: 100%;
+}
+
+.link_container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1c24;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.links {
+  list-style-type: none;
+  color: #fff;
+}
+
+.links > :first-child{
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contact_information {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #16181e;
+}
+
+.contact_links {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+#contact {
+  color: #fff;
+  text-decoration: none;
+}
+
+#facebook_logo {
+  padding: 1em;
+  color: #fff;
+}
+
+#twitter_logo {
+  color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar_link{
+    display: none;
+  }
+
+  .main_body {
+    margin-left: 2em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #tagline {
+    display: none;
+  }
+
+  #submit {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #email_box {
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  #submit_button {
+    margin-left: 0;
+    margin-right: -2em;
+    text-align: center;
+  }
+
+  .link_container {
+    flex-direction: column;
+  }
+
+  .links li:first-child {
+
+  }
+
+  .links li:nth-child(1) ~ li {
+    display: none;
+  }
+
+}
